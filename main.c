@@ -1,19 +1,25 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-int main()
-{
-     int apple =37,ios=37, android=14;
-
-     if (apple==ios)
-
-     {
-         printf("apple and ios are equal\n");
-     }
-     else if (apple==android)
-     {
-         printf ("apple and android is equal\n");
-     }
-
-    return 0;
+int main() {
+int array[6] = {2, 4, 5, 6, -1, 2};
+int start = 5;
+int size = 5;
+int length = 6;
+int st = start;
+printf("Circular array elements:\n");
+for (int i = 0; i < size; i++) {
+printf("%d ", array[st]);
+st = (st + 1) % length; // wrap around using modulus
 }
+printf("\n");
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
